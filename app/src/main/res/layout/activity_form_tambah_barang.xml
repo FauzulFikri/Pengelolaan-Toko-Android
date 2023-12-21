@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormTambahBarangActivity"
+    android:background="@color/green">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp"
+        android:paddingBottom="20dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:navigationIcon="@drawable/ic_back">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:text="Silahkan Tambahkan Buah "
+                    android:textColor="@color/black"
+                    android:textSize="28sp" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Edit Text 1 -->
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:background="@color/blue"
+        android:hint="Nama Barang"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <!-- Edit Text 2 -->
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/blue"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="Tanggal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText1" />
+
+    <!-- Edit Text 3 -->
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/blue"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="Kategori Buah"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText2" />
+
+    <!-- Edit Text 4 -->
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/blue"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="Jumlah Buah"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText3" />
+
+    <!-- Edit Text 5 -->
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/blue"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="Spesifikasi"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText4" />
+
+    <!-- Edit Text 6 -->
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/blue"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="Kondisi"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText5" />
+
+    <!-- Edit Text 7 -->
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/blue"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="Keterangan"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText6" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnTambah"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/orange"
+        android:text="Tambah"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
